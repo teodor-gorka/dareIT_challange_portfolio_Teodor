@@ -66,9 +66,129 @@ Uzyskałem 10 punktów z testu.
   * Wygląd przycisków jest archaiczny.
 
 * Katalog zawodników
-  *  Przeglądanie katalogu jest niewygodne, ze względu na zbyt mało wyraźne oddzielenie kolejnych profili zawodników pomiędzy sobą. Problem jest jeszcze większy na urządzeniach mobilnych. <img width="499" alt="zrzut ekranu tabela na mobilnych" src="https://user-images.githubusercontent.com/75786629/212549834-c610da8b-57d7-4851-8b58-985b4839bb67.png">
+  *  Przeglądanie katalogu jest niewygodne, ze względu na zbyt mało wyraźne oddzielenie kolejnych profili zawodników pomiędzy sobą. Problem jest jeszcze większy na urządzeniach mobilnych. <img width="499" alt="tabela na mobilnych" src="https://user-images.githubusercontent.com/75786629/212549834-c610da8b-57d7-4851-8b58-985b4839bb67.png">
 
-  * Logo ScoutPanel jest niekatywne. Oczekiwałem przycisku, który przeniesie użytkownika na stronę główną, lub do katalogu zawodników. <img width="624" alt="logo przycisk" src="https://user-images.githubusercontent.com/75786629/212549926-592f285e-d1ca-463f-82fe-204247297cee.png">
+  * Logo ScoutPanel jest niekatywne. Oczekiwałem przycisku, który przeniesie użytkownika na stronę główną, lub do katalogu zawodników. 
+  <img width="624" alt="logo przycisk" src="https://user-images.githubusercontent.com/75786629/212549926-592f285e-d1ca-463f-82fe-204247297cee.png">
 
   * Kliknięcie w profil zawodnika, przenosi nas od razu do edycji jego danych. Uważam, że po kliknięciu powinniśmy otwierać profil zawodnika z informacjami i 3 opcjami w lewym menu: edycja profilu, mecze, raporty. 
-  * 
+
+* Raport po meczu
+  * gwiazdki na początku formularza nie aktywne, a odruchowo to własnie tam chciałem wstawić ocenę. 
+* zakładka "Mecze" oraz zakładka "Raporty
+  * Tabela nie mieści sie w całości na urządzeniach mobilnych
+  * Brak możliwości sortowania wg poszczególnych kolumn tabeli.
+
+W mojej ocenie, szata graficzna nie jest zbyt atrakcyjna, natomiast nie przeszkadza to w funkcjonalności aplikacji. Sugerowałbym konsultację z klientem, czy oczekuje "surowej" funkcjonalności, czy chciałby wprowadzić bardziej atrakcyjny design aplikacji. 
+
+### Błędy
+
+
+#### 1. Logowanie
+* formularz nie przepuszcza białych znaków. Bardzo łatwo o nieprawidłowe logowanie, jeśli np wkleimy poprawny adres email, ale nieświadomie - ze spacją na końcu. 
+
+#### 2. Strona główna 
+* Błąd językowy, zgodnie z zasadami języka polskiego "Ilość meczów" 
+<img width="296" alt="błąd językowy - meczów" src="https://user-images.githubusercontent.com/75786629/212661347-e1289a0a-6415-4774-bbbc-397d3fe29494.png">
+
+* Jeśli mamy niezapisany mecz i klikniemy w odnośnik "Wróć do raportu", nic sie nie dzieje + otrzymujemy błąd w konsoli. Działa natomiast clickPPM + "otwórz w nowej karcie"
+<img width="930" alt="powrot do niezapisanego meczu oraz blad w konsoli" src="https://user-images.githubusercontent.com/75786629/212663692-7226f752-ab3e-4d80-a5ce-3ad0c0b2cfe0.png">
+
+#### 3. Katalog zawodników (zakładka "Gracze")
+
+* Brak możliwości sortowania tabeli wg kategorii "Mecze" oraz "Raporty"
+* Brak zwijania zbyt długiej zawartości komórki tabeli, powoduje brak czytelności całej tabeli
+<img width="1327" alt="zbyt dlugie dane" src="https://user-images.githubusercontent.com/75786629/212667503-0e5b0889-627c-4748-9fb0-1f2f96e6aed6.png">
+
+* Brak opcji "Dodaj gracza" - sugeruję umieścić na górze strony. 
+
+
+#### 4. Dodawanie/Edycja danych zawodnika
+* Formularz akceptuje zbyt wiele znaków w poszczególnych polach, powodując późniejsze problemy z wyświetlaniem.
+* Formularz akceptuje ujmeny wzrost, oraz zbyt wysokie wartości
+* Formularz akceptuje ujemą wagę, oraz zbyt wysokie wartości
+* Brak informacji o jednostkach masy pola "waga". należy uzupełnić np: (kg)
+<img width="550" alt="brak jednostek masy" src="https://user-images.githubusercontent.com/75786629/212672910-714ad3df-4a12-4777-9530-f2c24a855c87.png">
+
+* Formularz akceptuje przyszłą datę urodzenia, oraz zbyt odległe daty urodzenia z przeszłości
+* Pole "telefon" akceptuje stringsy zamiast wyłącznie wartości liczbowe i ewentualne znaki specjalne
+* Formularz akceptuje niepoprawne linki (np ze spacjami)
+* Pola "Łączy nas piła", "90 minut", "profil facebook" akceptują linki do innych stron internetowych, oraz niepoprawny format adresów. 
+<img width="1137" alt="bledne linki" src="https://user-images.githubusercontent.com/75786629/212674321-9ab381ba-2a67-4369-b67a-3871c62919ab.png">
+
+* Przy wprowadzeniu adresu email w niepoprawnej formie, formularz nie pozwoli nam zapisać gracza, bez informacji zwrotnej dlaczego. Należy wstawić prompt "niepoprawny adres email" pod polem "adres email"
+<img width="1175" alt="niepoprawny mail gracza" src="https://user-images.githubusercontent.com/75786629/212671382-7e5fad44-8eb3-45f1-8e7f-b83b1ce3fae6.png">
+
+* Formularz akceptuje puste pola "Języki" po kliknięciu "dodaj język"
+ <img width="1173" alt="puste pola jezyki" src="https://user-images.githubusercontent.com/75786629/212675083-9849d79d-83b0-4cbd-9a40-95ded54d06d1.png">
+
+* Formularz akceptuje puste pola "link do youtube", oraz niepoprawne linki
+<img width="357" alt="Puste linki youtube" src="https://user-images.githubusercontent.com/75786629/212675401-171a98ca-4e3b-41f3-acb5-0f0ace6c305a.png">
+
+* W trybie edycji, przycisk "Clear" kasuje tylko dane wprowadzone w tej "sesji" zamiast wyczyścić wszystkie pola. Sugeruję dodanie/zmianę nazwy przycisku na "cofnij zmiany" 
+* Błędy językowe: 
+  * rozwijana lista województwo: "Dolnoślaskie" (brak ą) -> poprawić na "Dolnośląskie"
+  * w języku angielskim rozwijana lista "district": Łódź -> poprawić na "Lodzkie"
+
+
+* Wątpliwości i sugestie:
+  * Brak kategorii płeć - katalog mógłby być bardziej precyzyjny i łatwiejszy w filtrowaniu, jeśli użytkownik mógłby rozróżnić zawodników i zawodniczki. 
+  * Wprowadzenie rozwijanych list zamiast pól tekstowych: 
+    * "Główna Pozycja", 
+    * "Pozycja alternatywna" 
+    * "Języki"  
+  Przy zmianie języka wyświetlania strony, te kategorie byłyby tłumaczone i odpowiednio filtrowane w wyszukiwarce. Przy aktualnym stanie aplikacji, użytkownik szukając "Bramkarz" nie znajdzie wszystkich zawodników o pozycji "Goalkeeper" itp.  
+  * Przy scrollowaniu formularza, możemy przez przypadek zmienić wzrost lub wagę zawodnika, jeśli były wybrane i wskaźnik myszy jest nad tym polem. 
+
+
+#### 5. Zakładka "Mecze"
+* Brak odpowiedniej responsywności, tabela wymaga przewijania w prawo/lewo na urządzeniach mobilnych. Jest zbyt rozciągnięta na ekranach o wysokiej rozdzielczości. 
+* Brak możliwości sortowania tabeli wg poszczególnych kolumn
+* Wyświetlanie całości zawartości komórki, powoduje nieczytelne wyświetlanie tabeli. Należy wyświetlić jedynie początkowy fragment dłuższego tekstu, tak by zachować funkcjonalność i wygodę użytkowania aplikacji.
+<img width="1254" alt="zbyt długi tekst w komórce" src="https://user-images.githubusercontent.com/75786629/212680036-3560b496-09fc-4c6c-986f-9cbee2292a4b.png">
+* Nie ma możliwości usunięcia dodanego meczu 
+* Możemy wielokrotnie dodawać raport z tego samego meczu, powodując duplikaty w zakładce "Raporty"
+
+#### 6. Formularz dodawania meczu do profilu zawodnika
+* Formularz akceptuje datę meczu wcześniejszą niż data urodzenia zawodnika
+* Daty z odległej przeszłości, daty przyszłe, są akceptowane. 
+* Numer zawodnika powinien mieścić się w zakresie 1 - 99, formularz akceptuje wartości poniżej zera oraz zbyt wysokie wartości. 
+* Formularz akceptuje "czas gry" dłuższy, niż możliwa jest długośc meczu wg zasad piłkarskich. Sugeruję 180 minut jako maksymalną wartość dla tego pola
+* "Czas gry" akceptuje wartości ujemne
+* Ilośc zdobytych oraz straconych goli powinna mieścić się w zakresie 0-99
+* W trybie edycji, przycisk "Clear" kasuje tylko dane wprowadzone w tej "sesji" zamiast wyczyścić wszystkie pola. Sugeruję dodanie/zmianę nazwy przycisku na "cofnij zmiany" 
+* W polskiej wersji językowej nie przetłumaczono z angielskiego nazw pól "Web match" oraz "general"
+
+#### 7. Tworzenie raportu "na żywo" (opcja "rozegraj mecz" w zakładce "mecze")
+* przycisk <img width="35" alt="ikona zegara" src="https://user-images.githubusercontent.com/75786629/212684164-f1dbfc40-b90f-409a-8c7f-b37e14acf063.png"> pozwala na więcej niż 4 połowy meczu. 
+
+* numer połowy może być ujemny
+* "czas" - sugeruję doprecyzowanie czy to czas meczu, czy czas gry zawodnika
+* "czas" akceptuje wartości ujemne 
+<img width="202" alt="ujemny czas i numer połowy" src="https://user-images.githubusercontent.com/75786629/212684858-412f6289-83c2-4682-9a2d-551cc3141667.png">
+* Brak informacji o roli przycisków, sugeruję dodać prompty przy najechaniu wskaźnikiem, lub podpisy pod ikonami. 
+* Brak logiki: wg zakładki "Mecze", zawodnik rozegrał w tym meczu 0 minut, ale w raporcie może w 5 minucie strzelić bramkę, w 10min podać itp. 
+* Po poprawnym "wysłaniu raportu" - raport nie pojawia się w zakładce raporty, czy to oczekiwany rezultat?
+
+#### 8. Zakładka "Raporty"
+* Brak odpowiedniej responsywności, tabela wymaga przewijania w prawo/lewo na urządzeniach mobilnych. Jest zbyt rozciągnięta na ekranach o wysokiej rozdzielczości. 
+* Brak możliwości sortowania tabeli wg poszczególnych kolumn
+* Wyświetlanie całości zawartości komórki, powoduje nieczytelne wyświetlanie tabeli. Należy wyświetlić jedynie początkowy fragment dłuższego tekstu, tak by zachować funkcjonalność i wygodę użytkowania aplikacji.
+* Nie ma możliwości usunięcia dodanego raportu 
+
+#### 9. Formularz dodawanie raportu do profilu zawodnika
+* Brak responsywności na urządzenia mobilnych
+* W polach tekstowych, niektóre funkcjonalności edytora tekstu, nie działają zgodnie z oczekiwaniem:
+  * Lista numerowana po kliknięciu klawisza enter, nie tworzy kolejnego podpunktu listy z cyfrą. 
+  * Lista punktowana po kliknięciu klawisza enter, nie tworzy kolejnego podpunktu listy z punktorem.
+  * Przedzielenie tekstu w liście numerowanej/punktowanej klawiszem enter, tworzy podwójny odstęp między liniami (podwójny enter)
+<img width="174" alt="niepoprawne listy" src="https://user-images.githubusercontent.com/75786629/212690981-eed6793e-c455-4bea-8584-def829aa9083.png">
+
+* Blockquote nie dodaje tła tekstu. (powinien?)
+* Pole IV. Recenzja, niepoprawne i niezrozumiałe tłumaczenie tekstu.
+  <img width="806" alt="niepoprawne tlumaczenie review" src="https://user-images.githubusercontent.com/75786629/212692137-1467f2ef-1ef6-45c8-8e0e-56f9b06a485c.png">
+
+* Brak limitu liczby znaków, może wprowadzać utrudnioną czytelność i funkcjonalność raportów. 
+
+#### 10. Dodatkowe uwagi
+*
