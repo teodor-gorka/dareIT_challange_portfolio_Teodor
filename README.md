@@ -168,6 +168,7 @@ W mojej ocenie, szata graficzna nie jest zbyt atrakcyjna, natomiast nie przeszka
 <img width="202" alt="ujemny czas i numer połowy" src="https://user-images.githubusercontent.com/75786629/212684858-412f6289-83c2-4682-9a2d-551cc3141667.png">
 * Brak informacji o roli przycisków, sugeruję dodać prompty przy najechaniu wskaźnikiem, lub podpisy pod ikonami. 
 * Brak logiki: wg zakładki "Mecze", zawodnik rozegrał w tym meczu 0 minut, ale w raporcie może w 5 minucie strzelić bramkę, w 10min podać itp. 
+* Brak możliwości edytowania wykasowania dodanego wydarzenia/zagrania.
 * Po poprawnym "wysłaniu raportu" - raport nie pojawia się w zakładce raporty, czy to oczekiwany rezultat?
 
 #### 8. Zakładka "Raporty"
@@ -188,7 +189,8 @@ W mojej ocenie, szata graficzna nie jest zbyt atrakcyjna, natomiast nie przeszka
 * Pole IV. Recenzja, niepoprawne i niezrozumiałe tłumaczenie tekstu.
   <img width="806" alt="niepoprawne tlumaczenie review" src="https://user-images.githubusercontent.com/75786629/212692137-1467f2ef-1ef6-45c8-8e0e-56f9b06a485c.png">
 
-* Brak limitu liczby znaków, może wprowadzać utrudnioną czytelność i funkcjonalność raportów. 
+* Brak limitu liczby znaków w polach tekstowych formularza, może wprowadzać utrudnioną czytelność i funkcjonalność raportów. 
 
-#### 10. Dodatkowe uwagi
-*
+#### 10. Dodatkowe uwagi i wątpliwości
+* czy w aplikacji oczekiwane jest rozróżnienie płci? 
+* czy słowo "gracz" jest właściwym określeniem? Sugeruję "Zawodnik" lub "Piłkarz". "Gracz" kojarzy się raczej z rekreacyjnym a nie zawodowym zajmowaniem się dyscypliną. 
