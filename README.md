@@ -127,8 +127,9 @@ W mojej ocenie, szata graficzna nie jest zbyt atrakcyjna, natomiast nie przeszka
 
 * W trybie edycji, przycisk "Clear" kasuje tylko dane wprowadzone w tej "sesji" zamiast wyczyścić wszystkie pola. Sugeruję dodanie/zmianę nazwy przycisku na "cofnij zmiany" 
 * Błędy językowe: 
-  * rozwijana lista województwo: "Dolnoślaskie" (brak ą) -> poprawić na "Dolnośląskie"
-  * w języku angielskim rozwijana lista "district": Łódź -> poprawić na "Lodzkie"
+  * nazwy województw w języku polskim, piszemy małą literą.
+  * rozwijana lista województwo: "Dolnoślaskie" (brak ą) -> poprawić na "dolnośląskie"
+  * w języku angielskim rozwijana lista "district": Łódź -> poprawić na "lodzkie"
 
 
 * Wątpliwości i sugestie:
