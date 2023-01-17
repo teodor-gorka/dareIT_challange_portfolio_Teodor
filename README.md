@@ -123,7 +123,7 @@ W mojej ocenie, szata graficzna nie jest zbyt atrakcyjna, natomiast nie przeszka
  <img width="1173" alt="puste pola jezyki" src="https://user-images.githubusercontent.com/75786629/212675083-9849d79d-83b0-4cbd-9a40-95ded54d06d1.png">
 
 * Formularz akceptuje puste pola "link do youtube", oraz niepoprawne linki
-<img width="357" alt="Puste linki youtube" src="https://user-images.githubusercontent.com/75786629/212675401-171a98ca-4e3b-41f3-acb5-0f0ace6c305a.png">
+<img width="291" alt="Puste linki youtube" src="https://user-images.githubusercontent.com/75786629/212882441-56c440e5-1e39-46bf-8e60-82ec308dc781.png">
 
 * W trybie edycji, przycisk "Clear" kasuje tylko dane wprowadzone w tej "sesji" zamiast wyczyścić wszystkie pola. Sugeruję dodanie/zmianę nazwy przycisku na "cofnij zmiany" 
 * Błędy językowe: 
