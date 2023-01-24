@@ -195,3 +195,21 @@ W mojej ocenie, szata graficzna nie jest zbyt atrakcyjna, natomiast nie przeszka
 #### 10. Dodatkowe uwagi i wątpliwości
 * czy w aplikacji oczekiwane jest rozróżnienie płci? 
 * czy słowo "gracz" jest właściwym określeniem? Sugeruję "Zawodnik" lub "Piłkarz". "Gracz" kojarzy się raczej z rekreacyjnym a nie zawodowym zajmowaniem się dyscypliną. 
+
+
+# Task 2
+
+### Subtask 1
+[Test cases for user stories](https://docs.google.com/spreadsheets/d/1pv7msMy5xce1eiu3cJlrYPfXBqqHVeoBAAWHH1DlHi8/edit?usp=share_link)
+
+### Subtask 2
+
+[Test cases based on own experience](https://docs.google.com/spreadsheets/d/13ROkTFxQMq_r0yxWq9p_w_1NaGysFLD_z55bLUTCoqo/edit?usp=share_link)
+
+### Subtask 3
+##### Po co piszemy test case'y?
+Test case'y tworzą ważną dokumentację pracy testera oraz mogą być pomocne w zrozumieniu działania aplikacji. Test case systematyzuje logikę i kolejność testowania, zwiększając pewność przetestowania kluczowych przypadków użycia aplikacji. Przypadek testowy, daje jasne kryteria, na podstawie których tester może ocenić, czy funkcjonalność działa zgodnie z oczekiwaniami. Ukazuje, które elementy zostały przetestowane oraz dokładnie w jakich krokach. Pozwala na odtwarzanie tych kroków w przyszłości w identyczny sposób.  Testowanie oparte o dobrze napisane przypadki testowe, w oparciu jedynie o dokumentację, mogą wpłynąć na dokładniejsze przetestowanie aplikacji, niż w przypadku testów eksploracyjych. Dobrze przygotowane test case'y stanowią również istotny element przy wdrażaniu nowych osób do projketu.
+
+
+### Subtask 4
+[5 test cases for pick.eat.up app](https://docs.google.com/spreadsheets/d/1A1ClmNCzGkpAbMm4YY02DBopjd0cOJuWXbbWaWR-sok/edit?usp=sharing)
