@@ -213,3 +213,13 @@ Test case'y tworzą ważną dokumentację pracy testera oraz mogą być pomocne 
 
 ### Subtask 4
 [5 test cases for pick.eat.up app](https://docs.google.com/spreadsheets/d/1A1ClmNCzGkpAbMm4YY02DBopjd0cOJuWXbbWaWR-sok/edit?usp=sharing)
+
+# Task 3
+
+### Subtask 2
+[Bug reports](https://docs.google.com/document/d/1cxvUv0qAZWSOvX2HFZeS6mmskKNqIMo04Jhl3TgeXEE/edit?usp=share_link)
+
+### Subtask 3
+[Test report](https://docs.google.com/document/d/142PdrQIegxPXxd0VM4-BRhFKaeXEu7X8Fphtqw-aKRs/edit?usp=share_link)
+
+
