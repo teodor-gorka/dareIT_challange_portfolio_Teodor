@@ -222,4 +222,29 @@ Test case'y tworzą ważną dokumentację pracy testera oraz mogą być pomocne 
 ### Subtask 3
 [Test report](https://docs.google.com/document/d/142PdrQIegxPXxd0VM4-BRhFKaeXEu7X8Fphtqw-aKRs/edit?usp=share_link)
 
+# Task 4
+
+### Subtask 2
+[Olx iPadOS bug report](https://docs.google.com/document/d/1MbMlCai6kSNpdJuDp2gnqMY_1YElbbv9pjgaobIyO1s/edit?usp=share_link)
+
+### Subtask 3
+
+#### OLX mobile app
+
+The main goal of the app is connecting small business or private sellers with buyers/customers. The app is mainly focussed on local trades, for both new and used goods. As the app is modern noticeboard, there is also big part for job search, and advertising services. With a such large range of use, there is variety of end-user types, so the app needs to be very user friendly, as it's intended also for tech-unproficient users. 
+In my opinion the app achieves it very well. Most functonality is intuitive, and straightforward. 
+
+##### Improvements
+
+There are a few improvements I could suggest for the native app (Both iOS and Android):
+* While swiping left on an offer's pictures gallery user reaches end of the gallery, and swipes left one more time, different offer is opened (e.g. next one from search results). While swiping through offers is convinient, quick swiping through gallery to find specific picture, and accidentally switching to the other offer might be annoing for user. 
+* When user on the main page chooses (taps) offers category, mosaic with all offers within choosen category is open. I'd change it to open subcategory lists, as main category is in 99% too general, to find anything interesting for a user. 
+    * Present behaviour requires 5 tap steps to perform, to get to desired subcategory.  
+    Main page -> Main category -> Offers mosaic -> Filters -> Subcategories -> Desired subcategory
+    
+    * My suggestion would allow to get user into offers in desired category in 3 taps.   
+    Main page -> Main Category -> Subcategories -> Desired subcategory
+
+
+
 
