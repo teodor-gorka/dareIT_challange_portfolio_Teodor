@@ -231,7 +231,7 @@ Test case'y tworzą ważną dokumentację pracy testera oraz mogą być pomocne 
 
 #### OLX mobile app
 
-The main goal of the app is connecting small business or private sellers with buyers/customers. The app is mainly focussed on local trades, for both new and used goods. As the app is modern noticeboard, there is also big part for job search, and advertising services. With a such large range of use, there is variety of end-user types, so the app needs to be very user friendly, as it's intended also for tech-unproficient users. 
+The main goal of the app is connecting small business or private sellers with buyers/customers. The app is mainly focused on local trades, for both new and used goods. As the app is modern noticeboard, there is also big part for job search, and advertising services. With a such large range of use, there is variety of end-user types, so the app needs to be very user friendly, as it's intended also for tech-unproficient users. 
 In my opinion the app achieves it very well. Most functonality is intuitive, and straightforward. 
 
 ##### Improvements
