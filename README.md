@@ -245,6 +245,71 @@ There are a few improvements I could suggest for the native app (Both iOS and An
     * My suggestion would allow to get user into offers in desired category in 3 taps.   
     Main page -> Main Category -> Subcategories -> Desired subcategory
 
+# Task 5
+
+### Subtask 1
+I've learnt about SQL statements, clauses, and operators such as:
+* SELECT
+* WHERE
+* AND, OR, NOT
+* ORDER BY
+* INSERT INTO
+* UPDATE
+* DELETE
+* LIKE
+* BETWEEN
+* GROUP BY
+* NULL Values
+
+### Subtask 3
+1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname.
+
+        SELECT * FROM `actors` ORDER BY surname;
+<img width="257" alt="1" src="https://user-images.githubusercontent.com/75786629/218312973-4cac1225-6b84-4822-ad79-66c985b637d8.png">
+
+2. Wyświetl film, który powstał w 2019 roku.
+
+        SELECT * FROM `movies` WHERE year_of_production=2019;
+<img width="319" alt="Zrzut ekranu 2023-02-12 o 14 13 36" src="https://user-images.githubusercontent.com/75786629/218313164-3887d925-58a4-4e53-8b84-91ac84b530e7.png">
+
+3. Wyświetl wszystkie filmy, które powstały między 1900, a 1999 rokiem.
+
+        SELECT * FROM `movies` WHERE year_of_production BETWEEN 1900 AND 1999;
+<img width="486" alt="Zrzut ekranu 2023-02-12 o 14 16 57" src="https://user-images.githubusercontent.com/75786629/218313342-9ce58bb3-48b7-4831-90e9-6861318d82f4.png">
+
+4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$
+        
+        SELECT title, price FROM `movies` WHERE price <7;
+     <img width="292" alt="Zrzut ekranu 2023-02-12 o 14 25 39" src="https://user-images.githubusercontent.com/75786629/218313772-65231ce6-54fc-4c73-ba81-a841d8f41c87.png">
+
+5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (4 i 7 powinny się wyświetlać). NIE UŻYWAJ operatora BETWEEN.
+
+        SELECT * FROM `actors` WHERE actor_id>=4 AND actor_id<=7;
+        
+      <img width="233" alt="Zrzut ekranu 2023-02-12 o 14 30 17" src="https://user-images.githubusercontent.com/75786629/218313993-6d4bd800-9f13-4f94-a4fe-b8f19216f63e.png">
+
+6. Wyświetl klientów o id 2,4,6 wykorzystaj do tego warunek logiczny.
+
+        SELECT * FROM `customers` WHERE mod(customer_id,2) = 0;
+<img width="353" alt="Zrzut ekranu 2023-02-12 o 14 37 09" src="https://user-images.githubusercontent.com/75786629/218314336-23f60684-fa19-40af-bb44-40bdac77c16b.png">
 
 
+7. Wyświetl klientów o id 1,3,5 wykorzystaj do tego operator IN.
 
+        SELECT * FROM `customers` WHERE customer_id IN (1,3,5);
+     <img width="336" alt="Zrzut ekranu 2023-02-12 o 14 40 29" src="https://user-images.githubusercontent.com/75786629/218314478-af17053f-bb54-411c-b3c3-76e78af3e450.png">
+
+8. Wyświetl dane wszystkich osób z tabeli ‘actors’, których imię zaczyna się od ciągu “An”.
+
+         SELECT * FROM `actors` WHERE name LIKE 'An%';
+<img width="216" alt="Zrzut ekranu 2023-02-12 o 14 43 24" src="https://user-images.githubusercontent.com/75786629/218314628-bd38f3fb-c527-45fe-9849-6d089dc088a0.png">
+
+9. Wyświetl dane klienta, który nie ma podanego adresu email.
+
+        SELECT * FROM `customers` WHERE email IS null OR email = '';
+<img width="285" alt="Zrzut ekranu 2023-02-12 o 14 48 02" src="https://user-images.githubusercontent.com/75786629/218314905-12199345-4807-4eab-9bac-230be3c57a11.png">
+
+10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id.
+
+        SELECT * FROM `movies` WHERE price>9 AND movie_id>=2 AND movie_id<=8;
+<img width="354" alt="Zrzut ekranu 2023-02-12 o 14 50 58" src="https://user-images.githubusercontent.com/75786629/218315019-abe78571-54eb-45b7-ad9e-fdb9e7932d5f.png">
