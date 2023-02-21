@@ -321,7 +321,7 @@ I've learnt about SQL statements, clauses, and operators such as:
 11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd
         
         UPDATE customers SET surname = "Miler" WHERE surname = "Muler"
-        <img width="345" alt="Zrzut ekranu 2023-02-21 o 10 04 39" src="https://user-images.githubusercontent.com/75786629/220298660-c6aaa01e-9426-4183-9c3f-3d3f7a3e57cf.png">
+<img width="345" alt="Zrzut ekranu 2023-02-21 o 10 04 39" src="https://user-images.githubusercontent.com/75786629/220298660-c6aaa01e-9426-4183-9c3f-3d3f7a3e57cf.png">
 
 12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. 
 
@@ -330,19 +330,19 @@ I've learnt about SQL statements, clauses, and operators such as:
         INNER JOIN sale 
         ON customers.customer_id = sale.customer_id 
         WHERE sale.movie_id = 4;
-        <img width="166" alt="Zrzut ekranu 2023-02-21 o 10 46 26" src="https://user-images.githubusercontent.com/75786629/220309393-4ccc55e9-79ff-44c2-ba0a-60c89bc7d34a.png">
+<img width="166" alt="Zrzut ekranu 2023-02-21 o 10 46 26" src="https://user-images.githubusercontent.com/75786629/220309393-4ccc55e9-79ff-44c2-ba0a-60c89bc7d34a.png">
 
 13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com
 
         UPDATE customers 
-SET email = "pati@mail.com" 
-WHERE name = "Patrycja";
+        SET email = "pati@mail.com" 
+        WHERE name = "Patrycja";
 <img width="347" alt="Zrzut ekranu 2023-02-21 o 11 00 10" src="https://user-images.githubusercontent.com/75786629/220312570-e1f961fa-c6fe-449e-bd6b-1176652aa899.png">
 
 14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. Wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia.
 
         SELECT customers.name, customers.surname, movies.title FROM ((customers INNER JOIN sale ON customers.customer_id = sale.customer_id) INNER JOIN movies ON sale.movie_id = movies.movie_id);
-        <img width="366" alt="Zrzut ekranu 2023-02-21 o 11 44 38" src="https://user-images.githubusercontent.com/75786629/220323766-b6728adc-f097-44bc-8ea9-deca1aec4b94.png">
+ <img width="366" alt="Zrzut ekranu 2023-02-21 o 11 44 38" src="https://user-images.githubusercontent.com/75786629/220323766-b6728adc-f097-44bc-8ea9-deca1aec4b94.png">
 
 15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska.
 
